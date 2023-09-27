@@ -1,0 +1,117 @@
+---
+title: "SaladDay"
+baseURL: "https://xdeb.org/"
+theme: "zen"
+languageCode: "en-GB"
+defaultContentLanguage: "en"
+pluralizelisttitles: false
+removePathAccents: true
+paginate: 10
+paginatePath: "page"
+summaryLength: 40
+newContentEditor: "bbedit"
+author:
+  name: "Fredrik Jonsson"
+  url: "https://xdeb.org/fredrik"
+  avatar: "site/fredrik_22_512.jpeg"
+
+markup:
+  goldmark:
+    parser:
+      attribute:
+        block: true
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+security:
+  exec:
+    allow:
+    - ^bbedit$
+    - ^sass$
+    - ^go$
+    - ^npx$
+    - ^postcss$
+
+permalinks:
+  post: "/post/:year/:slug"
+  micro: "/micro/:year/:slug"
+
+outputFormats:
+  SearchIndex:
+    mediaType: "application/json"
+    baseName: "searchindex"
+    isPlainText: true
+    notAlternative: true
+
+outputs:
+  home: ["HTML","RSS","JSON","SearchIndex"]
+  section: ["HTML","RSS", "JSON"]
+
+params:
+  # breadcrumbSections:
+  #   - ragnvald
+  contact: "saladday@foxmail.com"
+  copyright: '<!--Creative Commons License-->This site is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a> licence.<!--/Creative Commons License-->'
+  # description: "The blog of Sal, web developer and Linux sysadmin."
+  dateformat: "2 January 2006"
+  favicon: "apple-touch-icon.png"
+  feedlinks: true
+  footer: "Powered by [Hugo](https://gohugo.io/) and the [Zen theme](https://github.com/frjo/hugo-theme-zen)."
+  frontposts: 3
+  icon: "apple-touch-icon.png"
+  image: "xdeb-org.jpg"
+  imageMaxWidth: 400
+  logo: false
+  microUsername: "sd"
+  mobileMenu: true
+  piwikSiteId: 1
+  piwikTrackerUrl: "admin.combonet.se/matomo"
+  poweredby: false
+  realfavicongenerator: true
+  relatedposts: true
+  safariPinnedColor: "#706a58"
+  sassTranspiler: "libsass"
+  searchLimit: 1000
+  sidebar: false
+  submitted: true
+  themeColor: "#706a58"
+  # podcast:
+  #   title: "Samtal med pappa"
+  #   summary: "Samtal med min pappa som föddes 1930, i ett helt annat Sverige. Vi pratar om mat, lekar, politik, landsbygd, familj och annat viktigt."
+  #   image: "podcast/images/samtal-med-pappa.jpg"
+  #   category:
+  #     name: "Society & Culture"
+  #     subcategories: ["History", "Personal Journals"]
+  #   author: "Samtal – xdeb.org"
+  #   owner:
+  #     name: "Fredrik Jonsson"
+  #     email: "samtal@xdeb.org"
+  #   lang: "sv-SE"
+
+
+menu:
+  main:
+    - Name: "Home"
+      weight: -10
+      pageRef: "/"
+    - Name: "Posts"
+      weight: -9
+      pageRef: "/post/"
+    - Name: "About"
+      weight: -8
+      URL: "/saladday/"
+#     - Name: "Samtal"
+#       weight: 10
+#       pageRef: "/samtal/"
+    # - Name: "Ragnvald"
+    #   weight: 11
+    #   pageRef: "/ragnvald/"
+    # - Name: "Services"
+    #   weight: 15
+    #   URL: "https://xdeb.net/services/"
+#     - Name: "Micro"
+#       weight: -8
+#       pageRef: "/micro/"
+

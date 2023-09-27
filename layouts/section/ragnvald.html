@@ -1,0 +1,16 @@
+{{ define "head" }}
+<meta name="format-detection" content="telephone=no">
+{{ end }}
+
+{{ define "main" -}}
+<main class="main layout__main">
+<header>
+<h1 class="title">{{ .Title }}</h1>
+</header>
+<article class="{{ with .Section }}section-{{ . | urlize }}{{ end }} single-view">
+<div class="content">
+{{ .Content }}
+</div>
+</article>
+</main>
+{{ end }}

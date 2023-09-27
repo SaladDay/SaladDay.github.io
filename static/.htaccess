@@ -1,0 +1,45 @@
+#
+# Apache settings:
+#
+
+<IfModule mod_setenvif.c>
+  SetEnvIfNoCase Referer www.remotasks.com spam
+  SetEnvIfNoCase Referer canary.remotasks.com spam
+
+  <RequireAll>
+    Require all granted
+    Require not env spam
+  </RequireAll>
+</IfModule>
+
+# Various rewrite rules.
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+
+  # Remove www
+  RewriteCond %{HTTP_HOST} ^www\.xdeb\.org$ [NC]
+  RewriteRule ^ https://xdeb.org%{REQUEST_URI} [R=permanent,L]
+
+  # Rewrite old URLs
+
+  RewriteCond %{REQUEST_URI} ^/blog/frjo [NC]
+  RewriteRule ^ / [R=permanent,L]
+
+  RewriteCond %{REQUEST_URI} ^/blog [NC]
+  RewriteRule ^ /post/ [R=permanent,L]
+
+  RewriteCond %{REQUEST_URI} ^/wiki/fredrik [NC]
+  RewriteRule ^ /fredrik [R=permanent,L]
+
+  RewriteCond %{REQUEST_URI} ^/wiki/ragnvald/grunsjoberattelser [NC]
+  RewriteRule ^ /ragnvald/bilder-berattelser-grundsjo [R=permanent,L]
+
+  RewriteCond %{REQUEST_URI} ^/wiki/ragnvald [NC]
+  RewriteRule ^ /ragnvald [R=permanent,L]
+
+  RewriteCond %{REQUEST_URI} ^/fj_items/reunion/(.*) [NC]
+  RewriteRule ^ /reunion/%1 [R=permanent,L]
+
+  RewriteCond %{REQUEST_URI} ^/post/(\d{4})/\d{2}/\d{2}/(.*) [NC]
+  RewriteRule ^ /post/%1/%2 [R=permanent,L]
+</IfModule>
