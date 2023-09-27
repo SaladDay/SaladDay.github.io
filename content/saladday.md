@@ -10,30 +10,30 @@ description: "SaladDay is a web developer and Network Engineer located in CQU Ch
 
 ---
 
-{{< figure src="/images/fredrik_22.jpeg" size="200x" class="right" alt="Fredrik Jonsson" title="Fredrik Jonsson" caption="Web developer & Linux sysadmin">}}
-{{< figure src="/site/introfj.jpeg" width="419" height="123" alt="Hi and welcome to my homepage." >}}
+{{< figure src="/images/saladday_21.png"  width="200" height="100" class="right" alt="saladday " title="SaladDay (Luo Fanjing)" caption=" web developer & Network Engineer">}}
+
 
 *A mind is like a parachute. It doesn't work if it's not open.*
 
-Welcome to my corner of the net. I work as a web developer and Linux sysadmin, more about that on [xdeb.net](https://xdeb.net/).
+Welcome to my corner of the net.I am an undergraduate student at CQU ChongQing/China, majoring in CS, participating in the Computer Excellence Program.
 
-I have a degree in political science but my interest in technology turned my career towards IT. I maintain a keen interest in politics. A family man that read a lot of books, watch SVT, BBC and sci-fi TV series and keep up with the scientific discoveries of our time. Like things that makes the world a better place. All humans have equal value.
+I define myself as a Web developer & Network engineer(~~although not yet officially~~). I have a strong interest in the Internet and have created some interesting projects. I also enjoy staying updated with the latest trends and researching 'useless' things.
 
-**E-mail**: [Contact form](https://xdeb.net/contact), fredrik at combonet dot se or frjo at xdeb dot org
+**E-mail**: saladday@foxmail.com
 
-**PGP**: [My public PGP key](/files/fj_pgp.asc) (D2858614)
+**Github**: [Link](https://github.com/SaladDay) 
 
-### Me on the Internet
+# Info
 
-* [My blog](/) here on xdeb.org.
-* [GitHub](https://github.com/frjo)
-* [Combonetwork development](https://combonet.se/) the service company I work via.
-* [xdeb.net services](https://xdeb.net/) with my hosting, development and consulting services.
-* [xdeb.net showcases](https://xdeb.net/case) web sites I have developed.
+* learning English now😭
+* Class Monitor
+* Head of the Technical Department at CQU-Waymaker
+* Member of 321CQU
+* Outstanding learnner,
 
-### Sponsor my work on open-source and blogging
+# Projects
 
-* [Buy Fredrik a pot of tea at Ko-fi](https://ko-fi.com/Z8Z83EY40)
-* [Sponsor Fredrik on GitHub Sponsors](https://github.com/sponsors/frjo)
+- Star Network IM(星网IM):A communication software that establishes point-to-point communication channels using satellites.
+- Transfer.zip:A web application that utilizes WebRTC technology to achieve ultra-fast file transfer within a local network.
 
-(The "parachute" quote and the Himalaya image I have had on my homepage since a long time. Keeping them here for nostalgic reasons and to guide old returning visitors.)
+- To be continued.....
