@@ -26,7 +26,7 @@ I define myself as a Web developer & Network engineer(~~although not yet officia
 # Info
 
 * learning English now😭
-* Class Monitor
+* Huawei MindSpore Intern
 * Head of the Technical Department at CQU-Waymaker
 * Member of 321CQU
 * Outstanding learnner,
