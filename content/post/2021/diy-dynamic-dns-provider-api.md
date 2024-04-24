@@ -198,4 +198,3 @@ With this in place the DNS entries for my home server should update within 60s o
 
 The most useful function for my home server is as a VPN with Wireguard. Later this year, when we hopefully can start traveling again, it will see some traffic after many month of rest.
 
-{{< sponsor >}}
